@@ -26,4 +26,10 @@ export interface ChatMessage {
   timestamp: Date;
   fileData?: ProcessedData;
   analysisResult?: AnalysisResult;
+  comparisonData?: ComparisonData;
+}
+
+export interface ComparisonData {
+  file1: ProcessedData;
+  file2: ProcessedData;
 }
